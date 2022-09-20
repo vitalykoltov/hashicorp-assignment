@@ -18,8 +18,8 @@
 
 ## Install Terraform
 
-Install Terraform on Linux server by navigating to [Terraform.io](https://www.terraform.io/downloads.html) and selecting Linux from the distribution options.
-- In this turturial we will use Ubuntu/Debian flavor of linux.
+Install Terraform by navigating to [Terraform.io](https://www.terraform.io/downloads.html) and selecting Linux from the distribution options.
+- (In this turturial we will use Debian system and are chosing Ubuntu/Debian flavor of linux.)
 
 We begin by running the following commands in the linux shell:
 
