@@ -1,16 +1,14 @@
-# Deploying Containerized Docker NGINX webserver with Terraform.
+# Deploying Containerized Docker NGINX webserver with Terraform. (60 minutes)
 
-[Terraform](https://en.wikipedia.org/wiki/Terraform_(software)) is an open-source Infrastructure as code (IaC) software created by [HashiCorp](https://www.hashicorp.com/).  
-- After completing this tutorial you will learn how to provision the latest NGINX webserver using Terraform and Docker on a supported platform. Note, we will be using a Debian Linux patform in this tutorial.
-- Estimated time to complete: 60 minutes.
-- In the following tasks we will: 
-- Install Terraform package for your operating system
-- Install Docker Engine (Docker Desktop for Linux)
-- Create Terraform configuration
-- Initialize Terraform configuration with a Docker plugin
-- Provision Docker container with the latest NGINX server release
-- Connect to the newly provisioned NGINX server
-- Destroy Docker container running NGINX server
+[Terraform](https://en.wikipedia.org/wiki/Terraform_(software)) is an open-source Infrastructure as code (IaC) software created by [HashiCorp](https://www.hashicorp.com/).  After completing this tutorial you will learn how to provision the latest NGINX webserver using Terraform and Docker on a supported platform. Note, we will be using a Debian Linux patform in this tutorial.
+- In this tutorial we will: 
+-  Install Terraform package for your operating system
+-  Install Docker Engine (Docker Desktop for Linux)
+-  Create Terraform configuration
+-  Initialize Terraform configuration with a Docker plugin
+-  Provision Docker container with the latest NGINX server release
+-  Connect to the newly provisioned NGINX server
+-  Destroy Docker container running NGINX server
 
 ## Prerequisites
 
