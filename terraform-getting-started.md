@@ -1,15 +1,16 @@
 # Deploying Containerized Docker NGINX webserver with Terraform on Linux Servers.
 
-[Terraform](https://en.wikipedia.org/wiki/Terraform_(software)) is an open-source Infrastructure as code (IaC) software created by [HashiCorp](https://www.hashicorp.com/).  After completing this tutorial you will learn how to provision the latest NGINX webserver using Terraform and Docker on a supported Linux platform. 
-Estimated time to complete: 60 minutes.
-In the following tasks we will: 
--- Install Terraform package for your operating system
--- Install Docker Engine (Docker Desktop for Linux)
--- Create Terraform configuration
--- Initialize Terraform configuration with a Docker plugin
--- Provision Docker container with the latest NGINX server release
--- Connect to the newly provisioned NGINX server
--- Destroy Docker container running NGINX server
+[Terraform](https://en.wikipedia.org/wiki/Terraform_(software)) is an open-source Infrastructure as code (IaC) software created by [HashiCorp](https://www.hashicorp.com/).  
+- After completing this tutorial you will learn how to provision the latest NGINX webserver using Terraform and Docker on a supported Linux platform. 
+- Estimated time to complete: 60 minutes.
+- In the following tasks we will: 
+- Install Terraform package for your operating system
+- Install Docker Engine (Docker Desktop for Linux)
+- Create Terraform configuration
+- Initialize Terraform configuration with a Docker plugin
+- Provision Docker container with the latest NGINX server release
+- Connect to the newly provisioned NGINX server
+- Destroy Docker container running NGINX server
 
 ## Prerequisites
 
@@ -24,9 +25,9 @@ In this turturial we will use Ubuntu/Debian flavor of linux.
 
 We begin by running the following commands in the linux shell:
 
-$wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
-$echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
-$sudo apt update && sudo apt install terraform
+[$wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg](#wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg)
+[$echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list](#echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list)
+[$sudo apt update && sudo apt install terraform](#sudo apt update && sudo apt install terraform)
 
 ## Install Docker Engine
 
