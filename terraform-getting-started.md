@@ -294,6 +294,42 @@ docker_container.nginx: Creation complete after 1s [id=e5f577b7684e15f7347fbead0
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
 
+## Verify the Docker container is running with command: docker ps. Running Docker container will loo similar to this output:
+
+```
+$ docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                NAMES
+e1e364ac671b   2d389e545974   "/docker-entrypoint.…"   14 seconds ago   Up 12 seconds   0.0.0.0:80->80/tcp   training
+```
+
+## Verify connectivity to the NGINX webser running in the Docker container we created using curl http://localhost:80 command.  You should see similar output to this:
+
+```
+$ curl http://localhost
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+```
 
 
 ### CLI command
