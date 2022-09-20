@@ -1,6 +1,46 @@
-# Getting Started with Terraform
+# Quick Start: Deploying Containerized Docker NGINX webserver with Terraform on Linux Servers.
 
-Terraform is the most popular langauge for defining and provisioning infrastructure as code (IaC).
+old:Terraform is the most popular langauge for defining and provisioning infrastructure as code (IaC).
+new: After completing this tutorial you will learn how to provision the latest NGINX webserver using Terraform on Linux Server.
+In the following tasks we will: 
+-- Install Terraform package for your operating system
+-- Install Docker Engine (Docker Desktop for Linux)
+-- Create Terraform configuration
+-- Initialize Terraform configuration with a Docker plugin
+-- Provision Docker container with the latest NGINX server release
+-- Connect to the newly provisioned NGINX server
+-- Destroy Docker container running NGINX server
+
+## Prerequisites
+
+- A Linux server with access to the internet
+- Ability to create and edit files on the linux server
+- Ability to install linux packages
+
+## Install Terraform
+
+Install Terraform on Linux server by navigating to [Terraform.io](https://www.terraform.io/downloads.html) and selecting Linux from the distribution otions.
+In this turturial we will use Ubuntu/Debian flavor of linux.
+
+We begin by running the following commands in the linux shell:
+
+$wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+$echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+$sudo apt update && sudo apt install terraform
+
+## Install Docker Engine
+
+[Install Docker Engine](https://docs.docker.com/engine/install/) for the Docker Desktop for Linux Platform
+[CLI command](#cli-command) / [API call using cURL](#api-call-using-curl) / [Web UI](#web-ui)
+We will be installing on the Debian Linux server
+[Install Docker Desktop on Debian](https://docs.docker.com/desktop/install/debian/)
+
+
+### CLI command
+
+### API call using cURL
+
+### Web UI
 
 To install Terraform, simply visit [Terraform.io](https://www.terraform.io/downloads.html) and download the compressed binary application executable file deliverable for your platform, machine or environment on which you like to run code and do development.
 
