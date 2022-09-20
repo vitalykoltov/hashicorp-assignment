@@ -20,8 +20,8 @@
 
 ## Install Terraform
 
-Install Terraform on Linux server by navigating to [Terraform.io](https://www.terraform.io/downloads.html) and selecting Linux from the distribution otions.
-In this turturial we will use Ubuntu/Debian flavor of linux.
+Install Terraform on Linux server by navigating to [Terraform.io](https://www.terraform.io/downloads.html) and selecting Linux from the distribution options.
+- In this turturial we will use Ubuntu/Debian flavor of linux.
 
 We begin by running the following commands in the linux shell:
 
@@ -36,8 +36,71 @@ $sudo apt update && sudo apt install terraform
 - [Install Docker Engine](https://docs.docker.com/engine/install/) for the Docker Desktop for Linux Platform
 - We will be installing on the Debian Linux server
 - [Install Docker Desktop on Debian](https://docs.docker.com/desktop/install/debian/)
+- Confirm Docker Engine has been installed by running the following command:
 
+```
+$docker info
+```
+- You will see output similar to this if your environment has been installed:
+```
+Client:
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  app: Docker App (Docker Inc., v0.9.1-beta3)
+  buildx: Docker Buildx (Docker Inc., v0.9.1-docker)
+  scan: Docker Scan (Docker Inc., v0.17.0)
 
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 0
+ Server Version: 20.10.18
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 1
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 9cd3357b7fd7218e4aec3eae239db1f68a5a6ec6
+ runc version: v1.1.4-0-g5fd4c4d
+ init version: de40ad0
+ Security Options:
+  apparmor
+  seccomp
+   Profile: default
+ Kernel Version: 5.10.133+
+ Operating System: Debian GNU/Linux 11 (bullseye) (containerized)
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 4
+ Total Memory: 15.63GiB
+ Name: cs-788453672897-default
+ ID: UPN7:BYDH:6D3H:ZCXO:R23H:ZTSB:PV3R:36ZT:ROBV:MKN5:FCKZ:VMFP
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Registry: https://index.docker.io/v1/
+ Labels:
+ Experimental: false
+ Insecure Registries:
+  127.0.0.0/8
+ Registry Mirrors:
+  https://us-mirror.gcr.io/
+ Live Restore Enabled: false
+ ```
+ 
 ### CLI command
 
 ### API call using cURL
