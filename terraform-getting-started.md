@@ -118,7 +118,7 @@ $cd terraform-demo
 $touch main.cf
 ```
 
-### Add the following configuration to the Terraform configuration file:
+### Add the following configuration to the Terraform configuration fileusing an editor of your choice:
 ```
 terraform {
   required_providers {
@@ -144,8 +144,39 @@ resource "docker_image" "nginx" {
 }
 ```
 
+Initialize Terraform project and download plugin for Docker to enable Docker image provisioning:
+```
+$terraform init
+```
+- If successfully run, you will see an output similar to this:
+```
 
-$cd terraform-demo
+Initializing the backend...
+
+Initializing provider plugins...
+- Finding latest version of kreuzwerker/docker...
+- Installing kreuzwerker/docker v2.21.0...
+- Installed kreuzwerker/docker v2.21.0 (self-signed, key ID BD080C4571C6104C)
+
+Partner and community providers are signed by their developers.
+If you'd like to know more about provider signing, you can read about it here:
+https://www.terraform.io/docs/cli/plugins/signing.html
+
+Terraform has created a lock file .terraform.lock.hcl to record the provider
+selections it made above. Include this file in your version control repository
+so that Terraform can guarantee to make the same selections by default when
+you run "terraform init" in the future.
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+```
 
 ### CLI command
 
@@ -153,48 +184,7 @@ $cd terraform-demo
 
 ### Web UI
 
-To install Terraform, simply visit [Terraform.io](https://www.terraform.io/downloads.html) and download the compressed binary application executable file deliverable for your platform, machine or environment on which you like to run code and do development.
 
-With Terraform installed, let's dive right into it and start creating some infrastructure.
-
-Most guys find it easiest to create a new directory on there local machine and create Terraform configuration code inside it.
-
-```shell
-$ mkdir terraform-demo
-$ cd terraform-demo
-```
-
-Next, create a file for your Terraform configuration code.
-
-```shell
-$ touch main.tf
-```
-
-Paste the following lines into the file.
-
-```hcl
-terraform {
-  required_providers {
-    docker = {
-      source = "kreuzwerker/docker"
-    }
-  }
-}
-provider "docker" {
-    host = "unix:///var/run/docker.sock"
-}
-resource "docker_container" "nginx" {
-  image = docker_image.nginx.latest
-  name  = "training"
-  ports {
-    internal = 80
-    external = 80
-  }
-}
-resource "docker_image" "nginx" {
-  name = "nginx:latest"
-}
-```
 
 Initialize Terraform with the `init` command. The AWS provider will be installed. 
 
