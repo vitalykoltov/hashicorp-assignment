@@ -449,34 +449,7 @@ docker_image.nginx: Destruction complete after 0s
 Destroy complete! Resources: 2 destroyed.
 ```
 
+## Next steps
+In this tutorial you have learned how to use Terraform with Docker to create and manage container-based webservers.  Next Steps:
 
-
-### CLI command
-
-### API call using cURL
-
-### Web UI
-
-
-
-Initialize Terraform with the `init` command. The AWS provider will be installed. 
-
-```shell
-$ terraform init
-```
-
-You shoud check for any errors. If it ran successfully, provision the resource with the `apply` command.
-
-```shell
-$ terraform apply
-```
-
-The command will take up to a few minutes to run and will display a message indicating that the resource was created.
-
-Finally, destroy the infrastructure.
-
-```shell
-$ terraform destroy
-```
-
-Look for a message are the bottom of the output asking for confirmation. Type `yes` and hit ENTER. Terraform will destroy the resources it had created earlier.
+[Creating Infrastructure on AWS using Terraform](https://learn.hashicorp.com/tutorials/terraform/aws-build?in=terraform/aws-get-started)
