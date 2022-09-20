@@ -2,11 +2,11 @@
 
 [Terraform](https://en.wikipedia.org/wiki/Terraform_(software)) is an open-source Infrastructure as code (IaC) software created by [HashiCorp](https://www.hashicorp.com/).  [Docker](https://en.wikipedia.org/wiki/Docker_(software)) is a widely used containerization software. After completing this tutorial you will learn how to provision the latest NGINX webserver using Terraform and Docker on a supported platform. 
 ```text
-Note, we will be using a Debian Linux patform in this tutorial.)
+Note, we will be using a Debian Linux patform in this tutorial.
 ```
 - 
 ```text
-In this tutorial we will:
+In the next 60 minutes we will:
 ```
 -  Install Terraform package for your operating system
 -  Install Docker Engine (Docker Desktop for Linux)
@@ -25,10 +25,9 @@ In this tutorial we will:
 ## Install Terraform
 
 Install Terraform by navigating to [Terraform.io](https://www.terraform.io/downloads.html) and selecting Linux from the distribution options.
-- (In this turturial we will use Debian system and are chosing Ubuntu/Debian flavor of linux.)
-
-We begin by running the following commands in the linux shell:
-
+```text
+- Select the platform choice appropriate for your environment. The following steps specific to install on Debian linux system: 
+```
 ```shell
 $wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg]
 $echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
