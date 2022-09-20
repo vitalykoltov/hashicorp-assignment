@@ -331,7 +331,7 @@ Commercial support is available at
 </html>
 ```
 ## To deprovision NGINX webserver and delete Docker container, run the following command: "terraform destroy":
-
+- Look for a message are the bottom of the output asking for confirmation. Type `yes` and hit ENTER.
 ```
 $ terraform destroy
 docker_image.nginx: Refreshing state... [id=sha256:2d389e545974d4a93ebdef09b650753a55f72d1ab4518d17a30c0e1b3e297444nginx:latest]
