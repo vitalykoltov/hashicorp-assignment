@@ -25,16 +25,16 @@ In this turturial we will use Ubuntu/Debian flavor of linux.
 
 We begin by running the following commands in the linux shell:
 
-[$wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg](#wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg)
-[$echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list](#echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list)
-[$sudo apt update && sudo apt install terraform](#sudo apt update && sudo apt install terraform)
+```shell
+$wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg]
+$echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+$sudo apt update && sudo apt install terraform
 
 ## Install Docker Engine
 
-[Install Docker Engine](https://docs.docker.com/engine/install/) for the Docker Desktop for Linux Platform
-[CLI command](#cli-command) / [API call using cURL](#api-call-using-curl) / [Web UI](#web-ui)
-We will be installing on the Debian Linux server
-[Install Docker Desktop on Debian](https://docs.docker.com/desktop/install/debian/)
+- [Install Docker Engine](https://docs.docker.com/engine/install/) for the Docker Desktop for Linux Platform
+- We will be installing on the Debian Linux server
+- [Install Docker Desktop on Debian](https://docs.docker.com/desktop/install/debian/)
 
 
 ### CLI command
