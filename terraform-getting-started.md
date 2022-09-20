@@ -26,14 +26,14 @@ In the next 60 minutes we will:
 
 Install Terraform by navigating to [Terraform.io](https://www.terraform.io/downloads.html) and selecting Linux from the distribution options.
 
-Select the platform choice appropriate for your environment. The following steps specific to install on Debian linux system: 
+Select the platform choice appropriate for your environment. The following steps are specific to Debian linux system: 
 
 ```shell
 $wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg]
 $echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 $sudo apt update && sudo apt install terraform
 ```
-Confirm Installation was successful, Type `terraform -v` and press ENTER:
+Confirm Installation was successful. Type `terraform -v` and press ENTER:
 
 ```
 $ terraform -v
@@ -45,12 +45,14 @@ on linux_amd64
 - [Install Docker Engine](https://docs.docker.com/engine/install/) for the Docker Desktop for Linux Platform
 - We will be installing on the Debian Linux server
 - [Install Docker Desktop on Debian](https://docs.docker.com/desktop/install/debian/)
-- Confirm Docker Engine has been installed by running the following command:
+- Confirm Docker Engine has been installed. Type `docker info` and press ENTER:
 
 ```
 $docker info
 ```
-- You will see output similar to this if your environment has been installed:
+
+You will see output similar to this if your environment has been installed:
+
 ```
 Client:
  Context:    default
@@ -112,17 +114,17 @@ Server:
 
 ## Create a directory for Terraform named terraform-demo
 
-```
+```shell
 $mkdir terraform-demo
 ```
 ## Create Terraform configuration file main.cf in the newly created terraform-demo directory
-```
+```shell
 $cd terraform-demo
 $touch main.cf
 ```
 
 ### Add the following configuration to the Terraform configuration fileusing an editor of your choice:
-```
+```text
 terraform {
   required_providers {
     docker = {
@@ -151,7 +153,7 @@ Initialize Terraform project and download plugin for Docker to enable Docker ima
 ```
 $terraform init
 ```
-- If successfully run, you will see an output similar to this:
+Successfully initialization contains output with the lines `Terraform has been successfully installed!`:
 ```
 
 Initializing the backend...
@@ -297,7 +299,9 @@ docker_container.nginx: Creation complete after 1s [id=e5f577b7684e15f7347fbead0
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
 
-## Verify the Docker container is running with command: `docker ps`. Running Docker container looks similar to this output:
+## Verify Docker container is running. Type `docker ps`. 
+
+Inspect information returned.  Notice Container ID, Image and Port(s):
 
 ```
 $ docker ps
@@ -305,7 +309,9 @@ CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS  
 e1e364ac671b   2d389e545974   "/docker-entrypoint.…"   14 seconds ago   Up 12 seconds   0.0.0.0:80->80/tcp   training
 ```
 
-## Verify connectivity to the NGINX webserver running in the Docker container we created using `curl http://localhost` command.  This is output of a successful curl:
+## Connect to NGINX webserver running in the Docker container. Type `curl http://localhost`: 
+
+Output of a successful connection request:
 
 ```
 $ curl http://localhost
@@ -335,8 +341,10 @@ Commercial support is available at
 ```
 ## Deprovision NGINX webserver and delete Docker container
 
-- Run the following command: `terraform destroy`:
-- When prompted for a confirmation message, type `yes` and press ENTER.
+Type `terraform destroy` and press ENTER:
+```text
+When prompted for a confirmation message, type `yes` and press ENTER.
+```
 ```
 $ terraform destroy
 docker_image.nginx: Refreshing state... [id=sha256:2d389e545974d4a93ebdef09b650753a55f72d1ab4518d17a30c0e1b3e297444nginx:latest]
