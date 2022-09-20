@@ -25,9 +25,9 @@ In the next 60 minutes we will:
 ## Install Terraform
 
 Install Terraform by navigating to [Terraform.io](https://www.terraform.io/downloads.html) and selecting Linux from the distribution options.
-```text
-- Select the platform choice appropriate for your environment. The following steps specific to install on Debian linux system: 
-```
+
+Select the platform choice appropriate for your environment. The following steps specific to install on Debian linux system: 
+
 ```shell
 $wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg]
 $echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
