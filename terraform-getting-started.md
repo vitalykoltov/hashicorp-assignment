@@ -106,7 +106,47 @@ Server:
   https://us-mirror.gcr.io/
  Live Restore Enabled: false
  ```
- 
+
+## Create a directory for Terraform named terraform-demo
+
+```
+$mkdir terraform-demo
+```
+## Create Terraform configuration file main.cf in the newly created terraform-demo directory
+```
+$cd terraform-demo
+$touch main.cf
+```
+
+### Add the following configuration to the Terraform configuration file:
+```
+terraform {
+  required_providers {
+    docker = {
+      source = "kreuzwerker/docker"
+    }
+  }
+}
+terraform {
+provider "docker" {
+    host = "unix:///var/run/docker.sock"
+}
+resource "docker_container" "nginx" {
+  image = docker_image.nginx.latest
+  name  = "training"
+  ports {
+    internal = 80
+    external = 80
+  }
+}
+resource "docker_image" "nginx" {
+  name = "nginx:latest"
+}
+```
+
+
+$cd terraform-demo
+
 ### CLI command
 
 ### API call using cURL
