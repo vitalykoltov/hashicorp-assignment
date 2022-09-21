@@ -19,7 +19,8 @@ In the next 60 minutes you will:
 [Provision Docker container with the latest NGINX server release](#provision-the-nginx-server-in-a-docker-container)
 
 [Connect to NGINX webserver](#connect-to-nginx-webserver)
--  Destroy Docker container running NGINX server
+
+[Destroy NGINX server]
 
 ## Prerequisites
 
