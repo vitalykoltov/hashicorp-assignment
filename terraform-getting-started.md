@@ -112,18 +112,21 @@ Server:
  Live Restore Enabled: false
  ```
 
-## Create a directory for Terraform named terraform-demo
+## Create Terraform Configuration
+
+Create a directory for Terraform named terraform-demo
 
 ```shell
 $mkdir terraform-demo
 ```
-## Create Terraform configuration file main.cf in the newly created terraform-demo directory
+Create Terraform configuration file main.cf in the newly created terraform-demo directory
+
 ```shell
 $cd terraform-demo
 $touch main.cf
 ```
 
-### Add the following configuration to the Terraform configuration fileusing an editor of your choice:
+Add the following configuration to the Terraform configuration fileusing an editor of your choice:
 ```text
 terraform {
   required_providers {
