@@ -447,9 +447,16 @@ Destroy complete! Resources: 2 destroyed.
 ```
 
 ## Next steps
-In this tutorial you have learned how to use Terraform with Docker to create and manage container-based webservers.  Next Steps:
+
+In this tutorial you have learned how to createNGINX webserver on a Docker container using Terraform.  You can now learn how to manage infrastructure on other platforms such as AWS, GCP, Alibaba, Azure and OCI:
 
 [Creating Infrastructure on AWS using Terraform](https://learn.hashicorp.com/tutorials/terraform/aws-build?in=terraform/aws-get-started)
+[Build Infrastructure - Terraform GCP](https://learn.hashicorp.com/tutorials/terraform/google-cloud-platform-build)
+[Build Infrsatructure - Terraform Azure](https://learn.hashicorp.com/tutorials/terraform/azure-build)
+[Getting Started with Terraform on Alibaba Cloud](https://www.alibabacloud.com/blog/getting-started-with-terraform-with-alibaba-cloud-what-is-terraform_596155)
+[Getting satrted with Terraform on OCI](https://docs.oracle.com/en-us/iaas/developer-tutorials/tutorials/tf-simple-infrastructure/01-summary.htm)
+
+
  ```
 
 
