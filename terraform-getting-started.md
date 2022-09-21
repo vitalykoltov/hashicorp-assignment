@@ -280,7 +280,9 @@ Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
 
 ## Verify Docker container is running. 
-Verify Doceker container is running. Type `docker ps` and press ENTER. 
+
+Verify Docker container is running. Type `docker ps` and press ENTER. 
+
 Inspect information returned.  Notice Container ID, Image and Port(s):
 
 ```
