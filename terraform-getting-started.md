@@ -14,7 +14,7 @@ In the next 60 minutes you will:
 
 [Create Terraform configuration](#create-terraform-configuration)
 
-[Provision Docker container with the latest NGINX server release](#provision-the-nginx-server-in-a-docker-container-using-the-following-command)
+[Provision Docker container with the latest NGINX server release](#provision-the-nginx-server-in-a-docker-container)
 -  Connect to the newly provisioned NGINX server
 -  Destroy Docker container running NGINX server
 
@@ -160,12 +160,14 @@ rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 ```
 
-## Provision the NGINX server in a Docker container using the following command: 
+## Provision the NGINX server in a Docker container 
+
+Provision the NGINX server in a Docker containerusing the following command:
 
 ```
 $terraform apply
 ```
-When prompted to continue due to warning for using deprecated attribute "latest", type "yes":
+When prompted to continue due to warning for using deprecated attribute "latest", type `yes`:
 
 ```
 
