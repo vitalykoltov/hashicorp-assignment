@@ -20,7 +20,7 @@ In the next 60 minutes you will:
 
 [Connect to NGINX webserver](#connect-to-nginx-webserver)
 
-[Destroy NGINX server](#destroy-docker-container)
+[Destroy Docker container](#destroy-docker-container)
 
 ## Prerequisites
 
