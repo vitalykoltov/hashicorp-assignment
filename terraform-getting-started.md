@@ -3,11 +3,13 @@
 [Terraform](https://en.wikipedia.org/wiki/Terraform_(software)) is an open-source Infrastructure as code (IaC) software created by [HashiCorp](https://www.hashicorp.com/).  
 [Docker](https://en.wikipedia.org/wiki/Docker_(software)) is a Platform-as-a-service (Paas) containerization software. 
 
-After completing this tutorial you will learn how to provision the latest NGINX webserver using Terraform and Docker on a supported platform. 
+In this tutorial you will learn how to provision the latest NGINX webserver using Terraform and Docker on a supported platform. 
 ```
 Note: We are using a Debian Linux patform in this tutorial.
-In the next 60 minutes you will:
+
 ```
+In the next 60 minutes you will:
+
 [Install Terraform package for your operating system](#install-terraform)
 
 [Install Docker Engine](#install-docker-engine)
@@ -291,7 +293,9 @@ CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS  
 e1e364ac671b   2d389e545974   "/docker-entrypoint.…"   14 seconds ago   Up 12 seconds   0.0.0.0:80->80/tcp   training
 ```
 
-## Connect to NGINX webserver running in the Docker container. Type `curl http://localhost`: 
+## Connect to NGINX webserver running in the Docker container. 
+
+Connect to NGINX webserver.  Type `curl http://localhost` and press ENTER: 
 
 Output of a successful connection request:
 
@@ -323,7 +327,7 @@ Commercial support is available at
 ```
 ## Deprovision NGINX webserver and delete Docker container
 
-Type `terraform destroy` and press ENTER:
+Destroy Docker container with NGINX webserver.  Type `terraform destroy` and press ENTER:
 ```text
 When prompted for a confirmation message, type `yes` and press ENTER.
 ```
