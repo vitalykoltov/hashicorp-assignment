@@ -7,10 +7,11 @@ After completing this tutorial you will learn how to provision the latest NGINX 
 ```
 Note: We are using a Debian Linux patform in this tutorial.
 In the next 60 minutes you will:
-```
+
 [Install Terraform package for your operating system](https://github.com/vitalykoltov/hashicorp-assignment/blob/my-assignment-branch/terraform-getting-started.md#install-terraform)
 
 [Install Docker Engine](https://github.com/vitalykoltov/hashicorp-assignment/blob/my-assignment-branch/terraform-getting-started.md#install-docker-engine)
+
 -  Create Terraform configuration
 -  Initialize Terraform configuration with a Docker plugin
 -  Provision Docker container with the latest NGINX server release
