@@ -17,7 +17,8 @@ In the next 60 minutes you will:
 [Create Terraform configuration](#create-terraform-configuration)
 
 [Provision Docker container with the latest NGINX server release](#provision-the-nginx-server-in-a-docker-container)
--  Connect to the newly provisioned NGINX server
+
+[Connect to NGINX webserver](#connect-to-nginx-webserver)
 -  Destroy Docker container running NGINX server
 
 ## Prerequisites
@@ -291,11 +292,11 @@ CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS  
 e1e364ac671b   2d389e545974   "/docker-entrypoint.…"   14 seconds ago   Up 12 seconds   0.0.0.0:80->80/tcp   training
 ```
 
-## Connect to NGINX webserver running in the Docker container. 
+## Connect to NGINX webserver. 
 
-Connect to NGINX webserver.  Type `curl http://localhost` and press ENTER: 
+Connect to NGINX webserver running inside Docker container.  Type `curl http://localhost` and press ENTER: 
 
-Output of a successful connection request:
+Output of a successful connection request will include a string **Welcome to nginx!**:
 
 ```
 $ curl http://localhost
