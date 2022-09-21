@@ -328,9 +328,9 @@ Commercial support is available at
 ## Destroy Docker container
 
 Destroy Docker container with NGINX webserver.  Type `terraform destroy` and press ENTER:
-```text
-When prompted for a confirmation message, type `yes` and press ENTER.
-```
+
+When prompted, type `yes` and press ENTER.
+
 ```
 $ terraform destroy
 docker_image.nginx: Refreshing state... [id=sha256:2d389e545974d4a93ebdef09b650753a55f72d1ab4518d17a30c0e1b3e297444nginx:latest]
