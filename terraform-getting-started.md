@@ -8,7 +8,7 @@ After completing this tutorial you will learn how to provision the latest NGINX 
 Note: We are using a Debian Linux patform in this tutorial.
 In the next 60 minutes you will:
 ```
--  Install Terraform package for your operating system
+[-  Install Terraform package for your operating system](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 -  Install Docker Engine
 -  Create Terraform configuration
 -  Initialize Terraform configuration with a Docker plugin
