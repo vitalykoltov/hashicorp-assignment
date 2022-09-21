@@ -39,16 +39,15 @@ on linux_amd64
 ```
 ## Install Docker Engine
 
-- [Install Docker Engine](https://docs.docker.com/engine/install/) for the Docker Desktop for Linux Platform
-- We will be installing on the Debian Linux server
-- [Install Docker Desktop on Debian](https://docs.docker.com/desktop/install/debian/)
-- Confirm Docker Engine has been installed. Type `docker info` and press ENTER:
+[Install Docker Engine]([https://docs.docker.com/engine/install/](https://docs.docker.com/desktop/install/debian/)) for Debian Linux
+
+Confirm Docker Engine has been installed. Type `docker info` and press ENTER:
 
 ```
 $docker info
 ```
 
-You will see output similar to this if your environment has been installed:
+Successfull installation returns output similar to this:
 
 ```
 Client:
