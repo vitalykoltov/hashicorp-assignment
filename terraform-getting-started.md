@@ -162,12 +162,13 @@ commands will detect it and remind you to do so if necessary.
 
 ## Provision the NGINX server in a Docker container 
 
-Provision the NGINX server in a Docker containerusing the following command:
+Provision the NGINX server in a Docker containerusing. Type \terraform apply` and press ENTER:
 
 ```
 $terraform apply
 ```
 When prompted to continue due to warning for using deprecated attribute "latest", type `yes`:
+Terraform will provision the latest version of an NGNIX webeserver running in a Docker container.
 
 ```
 
@@ -278,8 +279,8 @@ docker_container.nginx: Creation complete after 1s [id=e5f577b7684e15f7347fbead0
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
 
-## Verify Docker container is running. Type `docker ps`. 
-
+## Verify Docker container is running. 
+Verify Doceker container is running. Type `docker ps` and press ENTER. 
 Inspect information returned.  Notice Container ID, Image and Port(s):
 
 ```
