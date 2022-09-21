@@ -9,7 +9,7 @@ Note: We are using a Debian Linux patform in this tutorial.
 In the next 60 minutes you will:
 ```
 -  Install Terraform package for your operating system
--  Install Docker Engine (Docker Desktop for Linux)
+-  Install Docker Engine
 -  Create Terraform configuration
 -  Initialize Terraform configuration with a Docker plugin
 -  Provision Docker container with the latest NGINX server release
