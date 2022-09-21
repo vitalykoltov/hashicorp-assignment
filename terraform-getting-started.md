@@ -281,8 +281,6 @@ docker_container.nginx: Creation complete after 1s [id=e5f577b7684e15f7347fbead0
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
 
-## Verify Docker container is running. 
-
 Verify Docker container is running. Type `docker ps` and press ENTER. 
 
 Inspect information returned.  Notice Container ID, Image and Port(s):
