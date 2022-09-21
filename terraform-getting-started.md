@@ -20,7 +20,7 @@ In the next 60 minutes you will:
 
 [Connect to NGINX webserver](#connect-to-nginx-webserver)
 
-[Destroy NGINX server]
+[Destroy NGINX server](#destroy_docker_container)
 
 ## Prerequisites
 
@@ -325,7 +325,7 @@ Commercial support is available at
 </body>
 </html>
 ```
-## Deprovision NGINX webserver and delete Docker container
+## Destroy Docker container
 
 Destroy Docker container with NGINX webserver.  Type `terraform destroy` and press ENTER:
 ```text
