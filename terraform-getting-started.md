@@ -14,7 +14,7 @@ In the next 60 minutes you will:
 
 [Create Terraform configuration](#create-terraform-configuration)
 
-[Provision Docker container with the latest NGINX server release](#
+[Provision Docker container with the latest NGINX server release](#provision-the-nginx-server-in-a-docker-container-using-the-following-command)
 -  Connect to the newly provisioned NGINX server
 -  Destroy Docker container running NGINX server
 
