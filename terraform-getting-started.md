@@ -9,7 +9,7 @@ Note: We are using a Debian Linux patform in this tutorial.
 In the next 60 minutes you will:
 ```
 [Install Terraform package for your operating system](https://github.com/vitalykoltov/hashicorp-assignment/blob/my-assignment-branch/terraform-getting-started.md#install-terraform)
-
+[Install Terraform package for your operating system](#install-terraform)
 [Install Docker Engine](https://github.com/vitalykoltov/hashicorp-assignment/blob/my-assignment-branch/terraform-getting-started.md#install-docker-engine)
 
 -  Create Terraform configuration
