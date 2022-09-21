@@ -283,7 +283,7 @@ Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 
 Verify Docker container is running. Type `docker ps` and press ENTER. 
 
-Inspect information returned.  Notice Container ID, Image and Port(s):
+Inspect information returned.  Notice *Container ID, Image and Ports* details:
 
 ```
 $ docker ps
