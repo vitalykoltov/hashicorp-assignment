@@ -2,6 +2,7 @@
 
 [Terraform](https://en.wikipedia.org/wiki/Terraform_(software)) is an open-source Infrastructure as code (IaC) software created by [HashiCorp](https://www.hashicorp.com/).  
 [Docker](https://en.wikipedia.org/wiki/Docker_(software)) is a Platform-as-a-service (Paas) containerization software. 
+
 After completing this tutorial you will learn how to provision the latest NGINX webserver using Terraform and Docker on a supported platform. 
 ```
 Note: we will be using a Debian Linux patform in this tutorial.
