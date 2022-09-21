@@ -13,8 +13,8 @@ In the next 60 minutes you will:
 [Install Docker Engine](#install-docker-engine)
 
 [Create Terraform configuration](#create-terraform-configuration)
--  Initialize Terraform configuration with a Docker plugin
--  Provision Docker container with the latest NGINX server release
+
+[Provision Docker container with the latest NGINX server release](#
 -  Connect to the newly provisioned NGINX server
 -  Destroy Docker container running NGINX server
 
