@@ -5,7 +5,7 @@
 
 After completing this tutorial you will learn how to provision the latest NGINX webserver using Terraform and Docker on a supported platform. 
 ```
-Note: we will be using a Debian Linux patform in this tutorial.
+Note: We are using a Debian Linux patform in this tutorial.
 In the next 60 minutes you will:
 ```
 -  Install Terraform package for your operating system
