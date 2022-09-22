@@ -171,8 +171,7 @@ Provision the NGINX web server in a Docker containerusing. Type `terraform apply
 ```
 $terraform apply
 ```
-When prompted to continue due to warning for using deprecated attribute "latest", type `yes`:
-Terraform will provision the latest version of an NGNIX web server running in a Docker container.
+When prompted, type `yes`. Terraform will provision the latest version of an NGNIX web server running in a Docker container.
 
 ```
 
