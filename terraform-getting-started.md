@@ -48,7 +48,7 @@ on linux_amd64
 ```
 ## Install Docker Engine
 
-[Install Docker Engine for Debian Linux](https://docs.docker.com/desktop/install/debian/)
+[Install Docker Engine for Debian Linux](https://docs.docker.com/desktop/install/debian/). If you are using a different Operating System, choose the corresponding installation [package](https://docs.docker.com/engine/install/) and follow instructions from Docker on how to install it.
 
 Confirm Docker Engine has been installed. Type `docker version` and press ENTER:
 
