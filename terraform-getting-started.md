@@ -447,7 +447,7 @@ Destroy complete! Resources: 2 destroyed.
 
 ## Next steps
 
-In this tutorial you have learned how to deploy Docker container with NGINX web server using Terraform.  You can now learn how to manage infrastructure with Terraform on other platforms such as AWS, GCP, Alibaba, Azure and OCI:
+In this tutorial you have learned how to deploy NGINX web serv on Docker using Terraform.  You can nowWe recommend the following training guides to learn how to use Terraform to manage infrastructure on other platforms such as AWS, GCP, Alibaba, Azure and OCI:
 
 [Creating Infrastructure on AWS using Terraform](https://learn.hashicorp.com/tutorials/terraform/aws-build?in=terraform/aws-get-started)
 
