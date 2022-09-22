@@ -1,4 +1,4 @@
-# Deploying NGINX webserver on Docker with Terraform. (60 minutes)
+# Getting started with Terraform on Docker: NGINX webserver deployment (60 minutes).
 
 [Terraform](https://en.wikipedia.org/wiki/Terraform_(software)) is an open-source Infrastructure as code (IaC) software created by [HashiCorp](https://www.hashicorp.com/).  
 [Docker](https://en.wikipedia.org/wiki/Docker_(software)) is a Platform-as-a-service (Paas) containerization software. 
@@ -24,9 +24,9 @@ In the next 60 minutes you will:
 
 ## Prerequisites
 
-- A Linux server with access to the internet
-- Ability to create and edit files on the linux server
-- Ability to install linux packages
+- [Supported](https://www.terraform.io/downloads) system with Internet access
+- Ability to create and edit files on the system
+- Ability to install Terraform and [Docker software](https://docs.docker.com/engine/install/) on the system
 
 ## Install Terraform
 
