@@ -1,9 +1,9 @@
-# Getting started with Terraform on Docker: NGINX webserver deployment (60 minutes).
+# Getting started with Terraform on Docker: NGINX web server deployment (60 minutes).
 
 [Terraform](https://en.wikipedia.org/wiki/Terraform_(software)) is an open-source Infrastructure as code (IaC) software created by [HashiCorp](https://www.hashicorp.com/).  
 [Docker](https://en.wikipedia.org/wiki/Docker_(software)) is a Platform-as-a-service (Paas) containerization software. 
 
-In this tutorial you will learn how to provision the latest NGINX webserver using Terraform and Docker on a supported platform. 
+In this tutorial you will learn how to provision the latest NGINX web server using Terraform and Docker on a supported platform. 
 ```
 Note: We are using a Debian Linux patform in this tutorial.
 
@@ -18,7 +18,7 @@ In the next 60 minutes you will:
 
 [Provision Docker container with the latest NGINX server release](#provision-the-nginx-server-in-a-docker-container)
 
-[Connect to NGINX webserver](#connect-to-nginx-webserver)
+[Connect to NGINX web server](#connect-to-nginx-web-server)
 
 [Destroy Docker container](#destroy-docker-container)
 
@@ -293,7 +293,7 @@ CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS  
 e1e364ac671b   2d389e545974   "/docker-entrypoint.…"   14 seconds ago   Up 12 seconds   0.0.0.0:80->80/tcp   training
 ```
 
-## Connect to NGINX webserver. 
+## Connect to NGINX web server. 
 
 Connect to NGINX webserver running inside Docker container.  Type `curl http://localhost` and press ENTER: 
 
@@ -448,7 +448,7 @@ Destroy complete! Resources: 2 destroyed.
 
 ## Next steps
 
-In this tutorial you have learned how to createNGINX webserver on a Docker container using Terraform.  You can now learn how to manage infrastructure on other platforms such as AWS, GCP, Alibaba, Azure and OCI:
+In this tutorial you have learned how to deploy Docker container with NGINX web server using Terraform.  You can now learn how to manage infrastructure with Terraform on other platforms such as AWS, GCP, Alibaba, Azure and OCI:
 
 [Creating Infrastructure on AWS using Terraform](https://learn.hashicorp.com/tutorials/terraform/aws-build?in=terraform/aws-get-started)
 [Build Infrastructure - Terraform GCP](https://learn.hashicorp.com/tutorials/terraform/google-cloud-platform-build)
