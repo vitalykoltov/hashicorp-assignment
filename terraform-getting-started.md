@@ -16,7 +16,7 @@ In the next 60 minutes you will:
 
 [Create Terraform configuration](#create-terraform-configuration)
 
-[Provision Docker container with the latest NGINX server release](#provision-the-nginx-server-in-a-docker-container)
+[Provision Docker container with the latest NGINX web server release](#provision-the-nginx-web-server-in-a-docker-container)
 
 [Connect to NGINX web server](#connect-to-nginx-web-server)
 
@@ -164,15 +164,15 @@ rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 ```
 
-## Provision the NGINX server in a Docker container 
+## Provision the NGINX web server in a Docker container 
 
-Provision the NGINX server in a Docker containerusing. Type \terraform apply` and press ENTER:
+Provision the NGINX web server in a Docker containerusing. Type \terraform apply` and press ENTER:
 
 ```
 $terraform apply
 ```
 When prompted to continue due to warning for using deprecated attribute "latest", type `yes`:
-Terraform will provision the latest version of an NGNIX webeserver running in a Docker container.
+Terraform will provision the latest version of an NGNIX web server running in a Docker container.
 
 ```
 
@@ -295,7 +295,7 @@ e1e364ac671b   2d389e545974   "/docker-entrypoint.…"   14 seconds ago   Up 12 
 
 ## Connect to NGINX web server. 
 
-Connect to NGINX webserver running inside Docker container.  Type `curl http://localhost` and press ENTER: 
+Connect to NGINX web server running inside Docker container.  Type `curl http://localhost` and press ENTER: 
 
 Output of a successful connection request will include a string **Welcome to nginx!**:
 
@@ -327,7 +327,7 @@ Commercial support is available at
 ```
 ## Destroy Docker container
 
-Destroy Docker container with NGINX webserver.  Type `terraform destroy` and press ENTER:
+Destroy Docker container with NGINX web server.  Type `terraform destroy` and press ENTER:
 
 When prompted, type `yes` and press ENTER.
 
