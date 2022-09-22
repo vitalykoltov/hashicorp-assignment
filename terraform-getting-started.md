@@ -92,12 +92,12 @@ Server: Docker Engine - Community
 
 ## Create Terraform Configuration
 
-Create a directory for Terraform named *terraform-demo*
+Create a directory for Terraform named *terraform-demo*. Type `mkdir terraform-demo` and press ENTER:
 
 ```shell
 $mkdir terraform-demo
 ```
-Create Terraform configuration file `main.cf` in the newly created *terraform-demo* directory
+Create Terraform configuration file `main.cf` in the newly created *terraform-demo* directory. Type `cd terraform-demo` and press ENTER. Type `touch main.cf` and press ENTER.
 
 ```shell
 $cd terraform-demo
@@ -130,11 +130,11 @@ resource "docker_image" "nginx" {
 }
 ```
 
-Initialize Terraform project and download plugin for Docker to enable Docker image provisioning:
+Initialize Terraform project and download plugin for Docker to enable Docker image provisioning. Type `terraform init` and press ENTER:
 ```
 $terraform init
 ```
-Successfully initialization contains output with the lines "*Terraform has been successfully installed!*":
+Successfully initialization result has the line "*Terraform has been successfully installed!*":
 ```
 
 Initializing the backend...
