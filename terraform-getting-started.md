@@ -5,8 +5,8 @@
 
 In this tutorial you will learn how to use Terraform to provision the latest release of NGINX web server on Docker. 
 ```
-Note: We are using a Debian Linux patform in this tutorial.  You will have an option to use another [supported](https://www.terraform.io/downloads) platform if Debian is not available in your environment.
-
+Note: We are using a Debian Linux patform in this tutorial.  
+You can use another [supported](https://www.terraform.io/downloads) platform if Debian is not available in your environment.
 ```
 In the next 60 minutes you will:
 
