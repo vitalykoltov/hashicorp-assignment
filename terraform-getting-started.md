@@ -92,7 +92,7 @@ Server: Docker Engine - Community
 
 ## Create Terraform Configuration
 
-Create a directory for Terraform named terraform-demo
+Create a directory for Terraform named *terraform-demo*
 
 ```shell
 $mkdir terraform-demo
