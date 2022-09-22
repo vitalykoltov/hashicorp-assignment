@@ -27,7 +27,8 @@ In the next 60 minutes you will:
 - [Supported](https://www.terraform.io/downloads) system with Internet access
 - Ability to create and edit files on the system
 - Ability to install Terraform and [Docker software](https://docs.docker.com/engine/install/) on the system
-
+- No services using port 80.  If you do have services already using port 80, you will need to adjust the Trraform configuration file to change references to *Port 80* accordingly to go through this tutorial.
+- 
 ## Install Terraform
 
 Install Terraform by navigating to [Terraform.io](https://www.terraform.io/downloads.html) and selecting Linux from the distribution options.
