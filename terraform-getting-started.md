@@ -103,7 +103,7 @@ $touch main.cf
 ```
 
 Add the following configuration to the Terraform configuration file using an editor of your choice:
-```text
+```hcl
 terraform {
   required_providers {
     docker = {
