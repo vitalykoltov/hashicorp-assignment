@@ -460,6 +460,4 @@ In this tutorial you have learned how to deploy Docker container with NGINX web 
 [Getting satrted with Terraform on OCI](https://docs.oracle.com/en-us/iaas/developer-tutorials/tutorials/tf-simple-infrastructure/01-summary.htm)
 
 
- ```
-
 
