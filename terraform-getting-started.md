@@ -5,7 +5,7 @@
 
 In this tutorial you will learn how to use Terraform to provision the latest release of NGINX web server on Docker. 
 ```
-Note: We are using a Debian Linux patform in this tutorial.  
+Note: We are using a Debian Linux platform in this tutorial.  
 You can use any other supported platform if Debian is not available in your environment.
 ```
 In the next 60 minutes you will:
@@ -56,7 +56,7 @@ Confirm Docker Engine has been installed. Type `docker version` and press ENTER:
 $docker version
 ```
 
-Successfull installation returns output similar to this:
+Successful installation returns output listing Docker Engine version:
 
 ```
 Client: Docker Engine - Community
@@ -166,12 +166,12 @@ commands will detect it and remind you to do so if necessary.
 
 ## Provision the NGINX web server in a Docker container 
 
-Provision the NGINX web server in a Docker containerusing. Type `terraform apply` and press ENTER:
+Provision the NGINX web server inside a Docker container. Type `terraform apply` and press ENTER:
 
 ```
 $terraform apply
 ```
-When prompted, type `yes`. Terraform will provision the latest version of an NGNIX web server running in a Docker container.
+When prompted, type `yes`. Terraform will provision the latest version of an NGNIX web server running in a Docker container. Look for a message "*Apply complete!*" in the output to confirm successful provisioning.
 
 ```
 
@@ -447,7 +447,7 @@ Destroy complete! Resources: 2 destroyed.
 
 ## Next steps
 
-In this tutorial you have learned how to deploy NGINX web serv on Docker using Terraform.  You can nowWe recommend the following training guides to learn how to use Terraform to manage infrastructure on other platforms such as AWS, GCP, Alibaba, Azure and OCI:
+In this tutorial you have learned how to deploy NGINX web serv on Docker using Terraform.  Proceed to the following training guides to learn how to use Terraform to manage infrastructure on other platforms such as AWS, GCP, Alibaba, Azure and OCI:
 
 [Creating Infrastructure on AWS using Terraform](https://learn.hashicorp.com/tutorials/terraform/aws-build?in=terraform/aws-get-started)
 
