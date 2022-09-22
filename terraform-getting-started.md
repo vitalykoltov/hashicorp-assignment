@@ -1,9 +1,6 @@
 # Getting started with Terraform on Docker: NGINX web server deployment (60 minutes).
 
-[Terraform](https://en.wikipedia.org/wiki/Terraform_(software)) is an open-source Infrastructure as code (IaC) software created by [HashiCorp](https://www.hashicorp.com/).  
-[Docker](https://en.wikipedia.org/wiki/Docker_(software)) is a Platform-as-a-service (Paas) containerization software. 
-
-In this tutorial you will learn how to use Terraform to provision the latest release of NGINX web server on Docker. 
+In this tutorial you will learn how to use [Terraform](https://en.wikipedia.org/wiki/Terraform_(software)), an open-source Infrastructure as code (IaC) software created by [HashiCorp](https://www.hashicorp.com/) to provision the latest release of NGINX web server on [Docker](https://en.wikipedia.org/wiki/Docker_(software)), a Platform-as-a-service (Paas) containerization software.
 ```
 Note: We are using a Debian Linux platform in this tutorial.  
 You can use any other supported platform if Debian is not available in your environment.
