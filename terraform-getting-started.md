@@ -166,7 +166,7 @@ commands will detect it and remind you to do so if necessary.
 
 ## Provision the NGINX web server in a Docker container 
 
-Provision the NGINX web server in a Docker containerusing. Type \terraform apply` and press ENTER:
+Provision the NGINX web server in a Docker containerusing. Type `terraform apply` and press ENTER:
 
 ```
 $terraform apply
