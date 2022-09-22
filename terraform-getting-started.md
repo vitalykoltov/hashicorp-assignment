@@ -25,7 +25,7 @@ In the next 60 minutes you will:
 - Ability to create and edit files on the system
 - Ability to install Terraform and [Docker software](https://docs.docker.com/engine/install/) on the system
 - Tutorial assumes port 80 is unused on your system.  If you have services already using port 80, you will need to adjust the Terraform configuration file to change references to *Port 80* accordingly and adjust the *http://localhost* to *http://localhost:<your_free_port>* portion of the *curl* command in the [Connect to NGINX web server step](#connect-to-nginx-web-server)  to go through this tutorial.  
-- 
+
 ## Install Terraform
 
 Install Terraform by navigating to [Terraform.io](https://www.terraform.io/downloads.html) and selecting Linux from the distribution options.
