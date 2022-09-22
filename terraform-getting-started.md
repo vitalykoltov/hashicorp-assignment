@@ -134,7 +134,7 @@ Initialize Terraform project and download plugin for Docker to enable Docker ima
 ```
 $terraform init
 ```
-Successfully initialization contains output with the lines *Terraform has been successfully installed!*:
+Successfully initialization contains output with the lines "*Terraform has been successfully installed!*":
 ```
 
 Initializing the backend...
