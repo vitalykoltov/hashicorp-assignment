@@ -455,7 +455,7 @@ In this tutorial you have learned how to deploy NGINX web serv on Docker using T
 
 [Getting Started with Terraform on Alibaba Cloud](https://www.alibabacloud.com/blog/getting-started-with-terraform-with-alibaba-cloud-what-is-terraform_596155)
 
-[Getting satrted with Terraform on OCI](https://docs.oracle.com/en-us/iaas/developer-tutorials/tutorials/tf-simple-infrastructure/01-summary.htm)
+[Getting started with Terraform on OCI](https://docs.oracle.com/en-us/iaas/developer-tutorials/tutorials/tf-simple-infrastructure/01-summary.htm)
 
 
 
